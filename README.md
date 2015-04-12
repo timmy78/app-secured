@@ -95,3 +95,21 @@ the installed application. You only need to do these once for all.
 
 To login into the application, you need to first sign up, with any of your email address, username and password.
 Then, you can login into the application with same email address and password at any time.
+
+
+
+-----------
+
+
+For Apache:
+
+<VirtualHost *:80>
+    ServerName www.app-secured.domain # You need to change it to your own domain  
+    ServerAlias app-secured.domain # You need to change it to your own domain  
+    DocumentRoot /my/path/to/app-secured # You need to change it to your own path  
+    <Directory /my/path/to/app-secured> # You need to change it to your own path  
+        AllowOverride All  
+    </Directory>  
+</VirtualHost>
+Use the URL http://app-secured.domain to access application frontend.
+Use the URL http://app-secured.domain/backend/ to access application backend.
