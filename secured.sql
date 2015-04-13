@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.2
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Client: localhost
--- Généré le: Dim 12 Avril 2015 à 14:57
--- Version du serveur: 5.6.11-log
--- Version de PHP: 5.4.15
+-- Client :  127.0.0.1
+-- Généré le :  Lun 13 Avril 2015 à 14:05
+-- Version du serveur :  5.6.17
+-- Version de PHP :  5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,10 +17,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données: `secured`
+-- Base de données :  `secured`
 --
-CREATE DATABASE IF NOT EXISTS `secured` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `secured`;
 
 -- --------------------------------------------------------
 
@@ -87,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `user`
@@ -96,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 INSERT INTO `user` (`id`, `username`, `auth_key`, `password_hash`, `password_reset_token`, `email`, `status`, `blocked`, `attempts`, `created_at`, `updated_at`) VALUES
 (1, 'timothee', 'fCPbEIAzfpE8OxGYng5CDKsEJoWBTE6e', '$2y$13$bhP/M3cirdV0TqBKY8WWIeiuwcFKyy9zLuuQtFblZsfQ2c19HkQMa', NULL, 'timothep@yahoo.fr', 1, NULL, NULL, 1428845911, 1428845911),
 (2, 'admin', 'QD0JRhf9E_ecKKrv7lHPI_ET0Nc2XksR', '$2y$13$NpHgfWRKrOZtukE4jFB/aeuh5viJ2b/cH0SF4hKsVUAApvIWwRnAa', NULL, 'timothee.planchais@gmail.com', 1, NULL, NULL, 1428845928, 1428845928),
-(3, 'yoann', 'QPiT0UMYkJ4SGRIkTxGlYxECRvBwDtIw', '$2y$13$4vXpL/YYN7oePT4TIvc2CuFggHiQoDUmsps61h38j46XaAIg0NY56', NULL, 'yoyo@test.fr', 1, NULL, NULL, 1428849957, 1428849957);
+(4, 'yoann', 'MarpJnks_Qeljt0-iOqEMrKlyz8-p36e', '$2y$13$Sdzh8a0noTVzL1Q6.h3HNOSQkzRQpLN.kCUvyS2.WJ12L8ilq7P06', NULL, 'yoann.reversat@gmail.com', 1, NULL, NULL, 1428926688, 1428926688);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
