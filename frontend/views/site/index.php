@@ -28,6 +28,7 @@ $this->title = Yii::$app->name;
                     <h3 class="panel-title"><?= Html::encode($post->title) ?></h3>
                 </div>
                 <div class="panel-body">
+                    <p class="pull-left text-left text-muted">Rédigé par <?= $post->author->username ?></p>
                     <p class="text-right text-muted"><?= Yii::$app->formatter->asDate($post->created_at, 'medium') ?></p>
                     <?= Html::encode($post->description) ?>
                 </div>
